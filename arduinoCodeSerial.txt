@@ -1,0 +1,60 @@
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(12,OUTPUT);
+  pinMode(10,OUTPUT);
+  pinMode(8,OUTPUT);
+  pinMode(6,OUTPUT);
+
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  if(Serial.available()>0){
+    String d1 = Serial.readString();
+    /*
+    int d2 = Serial.readStringUntil(',').toInt();
+    int d3 = Serial.readStringUntil(',').toInt();
+    int d4 = Serial.readStringUntil('.').toInt();
+    */
+    if(d1[0]=='1'){
+      digitalWrite(12,HIGH);
+    }else{
+      digitalWrite(12,LOW);
+    }
+
+    if(d1[1]=='1'){
+      digitalWrite(10,HIGH);
+    }else{
+      digitalWrite(10,LOW);
+    }
+
+    if(d1[2]=='1'){
+      digitalWrite(8,HIGH);
+    }else{
+      digitalWrite(8,LOW);
+    }
+    /*
+    if(d1=='1'){
+      digitalWrite(led2,HIGH);
+    }else{
+      digitalWrite(led2,LOW);
+    }
+
+    if(d1=='1'){
+      digitalWrite(led3,HIGH);
+    }else{
+      digitalWrite(led3,LOW);
+    }
+
+    if(d1=='1'){
+      digitalWrite(led4,HIGH);
+    }else{
+      digitalWrite(led4,LOW);
+    }
+    */
+    delay(500);
+    }
+
+}
