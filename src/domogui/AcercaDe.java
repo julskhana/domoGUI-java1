@@ -69,7 +69,7 @@ public class AcercaDe extends javax.swing.JFrame {
         jTextArea1.setText("Profesor:\nRonald Raul Criollo Bonilla\n\nIntegrantes:\nJulian Bajaña\nChristian Hidalgo\nNorberto Vidal\n");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel3.setText("2015 Termino 2 - Version 1.2");
+        jLabel3.setText("2015 Termino 2 - Version 0.9");
 
         espolLogo.setPreferredSize(new java.awt.Dimension(157, 156));
 
