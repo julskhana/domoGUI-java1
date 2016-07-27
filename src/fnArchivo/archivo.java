@@ -205,8 +205,8 @@ public class archivo {
     
     //ACtuadores
     public static boolean editar_registroS(Sensor s){        
-        //ArrayList<Sensor> registros = null;
-        ArrayList<Sensor> registros;
+        ArrayList<Sensor> registros = null;
+        //ArrayList<Sensor> registros;
         try{
             registros = archivo.obtener_registroS();
             for(Sensor tmp:registros){
