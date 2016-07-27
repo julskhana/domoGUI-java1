@@ -17,8 +17,7 @@ import java.util.ArrayList;
  */
 public class archivo {
     private static final String RUTA_SENSOR = "sensores.txt";
-    private static final String RUTA_ACTUADOR = "actuadores.txt";
-    
+    private static final String RUTA_ACTUADOR = "actuadores.txt";    
     //funcion para crear los archivos de sensores y actuadores
     public static boolean crearS(){
         wrtArchivo archivo = new wrtArchivo();
@@ -151,7 +150,6 @@ public class archivo {
         return true;
     }
     
-    
     //actualizar datos
     //sensores
     public static boolean actDataS(Sensor s){        
@@ -207,8 +205,8 @@ public class archivo {
     
     //ACtuadores
     public static boolean editar_registroS(Sensor s){        
-        ArrayList<Sensor> registros = null;
-        
+        //ArrayList<Sensor> registros = null;
+        ArrayList<Sensor> registros;
         try{
             registros = archivo.obtener_registroS();
             for(Sensor tmp:registros){

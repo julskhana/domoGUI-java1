@@ -8,7 +8,6 @@ import domogui.frmPrincipal;
 import fnArchivo.archivo;
 
 /**
- *
  * @author julian
  */
 public class principal {
@@ -19,8 +18,7 @@ public class principal {
     public static void main(String[] args) {
         archivo.crearS();
         archivo.crearA();
-        // TODO code application logic here
-        
+        // TODO code application logic here     
         frmPrincipal form = new frmPrincipal();
         form.setVisible(true);
     }
