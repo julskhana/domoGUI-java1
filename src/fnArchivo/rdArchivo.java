@@ -10,12 +10,10 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 
-//change for updating to github 1
-//need to find something to write
-//install gimp
 /**
  * @author julian
  */
+
 public class rdArchivo {
     private ObjectInputStream entrada;
     
@@ -56,5 +54,4 @@ public class rdArchivo {
          throw e;
       }
    } 
-    
 }
